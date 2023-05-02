@@ -15,16 +15,14 @@ function populate(buttonId){
 
 }
 
-function displayNumber(num) {
-    display.textContent += num;
-  }
-
 function buttonEvent(buttonId) {
-    const button = document.getElementById("buttonId");
+    const button = document.getElementById(buttonId);
     const display = document.getElementById("res_display");
 
     button.addEventListener("click", function () {
-        display.textContent = ;
+ 
+
+        display.textContent += button.textContent;
     });
 }
 

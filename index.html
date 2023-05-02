@@ -13,9 +13,10 @@
     <div class="phone_cover">
       <div class="calculator_buttons">
         <table>
-          <div class="phone_display" id="res_display">
             <tr>
-              <td colspan="4" style="text-align: right;" id="print_display"></td>
+              <td colspan="4" style="text-align: right;"> 
+                <div class="phone_display" id="res_display"></div>
+            </td>
             </tr>
           </div>
           <div class="first_row">
@@ -28,8 +29,8 @@
           </div>
           <div class="second_row">
             <tr>
-              <td><button id="myNum7">7</button></td>
-              <td><button id="myNum8">8</button></td>
+              <td><button id="myNum7" onclick="buttonEvent('myNum7')">7</button></td>
+              <td><button id="myNum8" onclick="buttonEvent('myNum8')">8</button></td>
               <td><button id="myNum9">9</button></td>
               <td><button id="multiply">X</button></td>
             </tr>
