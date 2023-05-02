@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.calculator_buttons{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* .phone_cover{
+    border: 2px solid;
+    background-color: black;
+    border-radius: 25px;
+} */
+
+button{
+    border-radius: 100px;
+    text-align: center;
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+}
+
+.phone_display{
+    text-align: right;
+    font-size: 50px;
+    align-items: right;
+}
