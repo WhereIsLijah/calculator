@@ -1,33 +1,33 @@
 let displayValue = '';
-let optr;
-
+let optr = '';
+let firstOprnd = '';
 
 function buttonEvent(buttonId) {
     const button = document.getElementById(buttonId);  
     const display = document.getElementById("res_display");
   
     display.textContent += button.textContent;
-    displayValue += display.textContent;
   }
 
 function operator(optr) {
     const button = document.getElementById(optr);  
     const display = document.getElementById("res_display");
   
-    display.textContent = button.textContent;
-    optr = display.textContent;
+    firstOprnd = display.textContent //strong firstoperands
+    optr = button.value; //storing operator
+        display.textContent = "";
+     
+}
 
-  }
 
   
-
-  button.addEventListener("click", function () {
-    display.textContent = ;
-
-
-    display.textContent += button.textContent;
-});
-  
+function clearDisplay(){ 
+display = document.getElementById("res_display")
+display.textContent = '';
+displayValue = '';
+optr = '';
+firstOprnd = '';
+}
 
 const addNum = (num1, num2) => num1 + num2;
 const subNum = (num1, num2) => num1 - num2;
@@ -44,10 +44,12 @@ function operate(optr) {
 
 // Change background colors of button
 // Design Iphone Shape, add clock and battery level
-// Use DOM for viewing input text
 // create hover for buttons
 // test functions
-// use switch case + DOM for number selection
+// Clear function
+// float feature?
+//  Equal??
 // add copyright with github link
+//let operators keep hovering until next number is clicked
 
 
