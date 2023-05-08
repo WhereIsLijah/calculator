@@ -23,37 +23,37 @@
             <tr>
               <td><button id="clear" onclick="clear()">AC</button></td>
               <td><button id="plusMinusOp">+/-</button></td>
-              <td><button id="mathMod">%</button></td>
-              <td><button id="division">&divide</button></td>
+              <td><button id="mathMod" value="%" onclick="operator('mathMod')">%</button></td>
+              <td><button id="division" value="/" onclick="operator('division')">&divide</button></td>
             </tr>
           </div>
           <div class="second_row">
             <tr>
-              <td><button onclick="buttonEvent('7')">7</button></td>
+              <td><button id="myNum7" onclick="buttonEvent('myNum7')">7</button></td>
               <td><button id="myNum8" onclick="buttonEvent('myNum8')">8</button></td>
-              <td><button id="myNum9">9</button></td>
-              <td><button id="multiply">X</button></td>
+              <td><button id="myNum9" onclick="buttonEvent('myNum9')">9</button></td>
+              <td><button id="multiply" value="X" onclick="operator('multiply')">X</button></td>
             </tr>
           </div>          
           <div class="third_row">
             <tr>
-              <td><button id="myNum4">4</button></td>
-              <td><button id="myNum5">5</button></td>
-              <td><button id="myNum6">6</button></td>
-              <td><button id="substract">-</button></td>
+              <td><button id="myNum4" onclick="buttonEvent('myNum4')">4</button></td>
+              <td><button id="myNum5" onclick="buttonEvent('myNum5')">5</button></td>
+              <td><button id="myNum6" onclick="buttonEvent('myNum6')">6</button></td>
+              <td><button id="substract" value="-" onclick="operator('substract')">-</button></td>
             </tr>
           </div>
           <div class="fourth_row">
             <tr>
-              <td><button id="myNum1">1</button></td>
-              <td><button id="myNum2">2</button></td>
-              <td><button id="myNum3">3</button></td>
-              <td><button id="add">+</button></td>
+              <td><button id="myNum1" onclick="buttonEvent('myNum1')">1</button></td>
+              <td><button id="myNum2" onclick="buttonEvent('myNum2')">2</button></td>
+              <td><button id="myNum3" onclick="buttonEvent('myNum3')">3</button></td>
+              <td><button id="add" value="+" onclick="operator('add')">+</button></td>
             </tr>
           </div>
           <div class="fifth_row">
             <tr>
-              <td colspan="2"><button id="myNum0">0</button></td>
+              <td colspan="2"><button id="myNum0" onclick="buttonEvent('myNum0')">0</button></td>
               <td><button id="period">.</button></td>
               <td><button id="equal">=</button></td>
             </tr>
