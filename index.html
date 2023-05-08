@@ -14,14 +14,14 @@
       <div class="calculator_buttons">
         <table>
             <tr>
-              <td colspan="4" style="text-align: right;"> 
+              <td colspan="4" style="text-align:right;"> 
                 <div class="phone_display" id="res_display"></div>
             </td>
             </tr>
           </div>
           <div class="first_row">
             <tr>
-              <td><button id="clear">AC</button></td>
+              <td><button id="clear" onclick="clear()">AC</button></td>
               <td><button id="plusMinusOp">+/-</button></td>
               <td><button id="mathMod">%</button></td>
               <td><button id="division">&divide</button></td>
@@ -29,7 +29,7 @@
           </div>
           <div class="second_row">
             <tr>
-              <td><button id="myNum7" onclick="buttonEvent('myNum7')">7</button></td>
+              <td><button onclick="buttonEvent('7')">7</button></td>
               <td><button id="myNum8" onclick="buttonEvent('myNum8')">8</button></td>
               <td><button id="myNum9">9</button></td>
               <td><button id="multiply">X</button></td>
