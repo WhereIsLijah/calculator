@@ -29,6 +29,7 @@ optr = '';
 firstOprnd = '';
 }
 
+
 const addNum = (num1, num2) => num1 + num2;
 const subNum = (num1, num2) => num1 - num2;
 const multiplyNum = (num1, num2) => num1 * num2;
