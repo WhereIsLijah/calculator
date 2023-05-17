@@ -44,13 +44,19 @@ function operate(optr) {
 
 
 // Change background colors of button
-// Design Iphone Shape, add clock and battery level
+// Design Iphone Shape
 // create hover for buttons
 // test functions
 // Clear function
-// float feature?
-//  Equal??
+// Equal??
 // add copyright with github link
 //let operators keep hovering until next number is clicked
+//floating line should close calc when swiped up
+//set position of display to fixed
+//buttons should not float
 
+var today = new Date();
+var iphoneTime = today.getHours() + ":" + today.getMinutes();
 
+const timeDisplay = document.querySelector(".time_div");
+timeDisplay.textContent = iphoneTime;

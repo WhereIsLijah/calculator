@@ -11,55 +11,49 @@
   <body>
     <!-- <h1>CALCULATOR</h1> -->
     <div class="phone_cover">
-      <div class="calculator_buttons">
+      <div class="time_div"></div>
+      <div class="signal_img">
+        <img src="/signal_wifi_battery.jpg" alt="Signal">
+      </div>
+        <div class="calculator_buttons">
         <table>
             <tr>
               <td colspan="4" style="text-align:right;"> 
-                <div class="phone_display" id="res_display"></div>
-            </td>
+                <div class="phone_display" id="res_display"> </div>
+              </td>
             </tr>
-          </div>
-          <div class="first_row">
-            <tr>
+            <tr class="first_row">
               <td><button id="clear" onclick="clearDisplay()" >AC</button></td>
               <td><button id="plusMinusOp">+/-</button></td>
               <td><button id="mathMod" value="%" onclick="operator('mathMod')">%</button></td>
               <td><button id="division" value="/" onclick="operator('division')">&divide</button></td>
             </tr>
-          </div>
-          <div class="second_row">
-            <tr>
+            <tr class="second_row">
               <td><button id="myNum7" onclick="buttonEvent('myNum7')">7</button></td>
               <td><button id="myNum8" onclick="buttonEvent('myNum8')">8</button></td>
               <td><button id="myNum9" onclick="buttonEvent('myNum9')">9</button></td>
               <td><button id="multiply" value="X" onclick="operator('multiply')">X</button></td>
-            </tr>
-          </div>          
-          <div class="third_row">
-            <tr>
+            </tr>        
+            <tr class="third_row">
               <td><button id="myNum4" onclick="buttonEvent('myNum4')">4</button></td>
               <td><button id="myNum5" onclick="buttonEvent('myNum5')">5</button></td>
               <td><button id="myNum6" onclick="buttonEvent('myNum6')">6</button></td>
               <td><button id="substract" value="-" onclick="operator('substract')">-</button></td>
             </tr>
-          </div>
-          <div class="fourth_row">
-            <tr>
+            <tr class="fourth_row">
               <td><button id="myNum1" onclick="buttonEvent('myNum1')">1</button></td>
               <td><button id="myNum2" onclick="buttonEvent('myNum2')">2</button></td>
               <td><button id="myNum3" onclick="buttonEvent('myNum3')">3</button></td>
               <td><button id="add" value="+" onclick="operator('add')">+</button></td>
             </tr>
-          </div>
-          <div class="fifth_row">
-            <tr>
+            <tr class="fifth_row">
               <td colspan="2"><button id="myNum0" onclick="buttonEvent('myNum0')">0</button></td>
               <td><button id="period">.</button></td>
               <td><button id="equal">=</button></td>
             </tr>
-          </div>
         </table>
       </div>
+      <div class="floating_line"></div>
     </div>
         <script src="script.js"></script>
   </body>

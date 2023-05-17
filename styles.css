@@ -1,41 +1,108 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .calculator_buttons {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .phone_cover {
-    background-color: black;
-    border-radius: 3.125rem; /* Converted from 50px to rem */
-    width: 18rem; /* Converted from 15% to rem */
-    height: 42rem; /* Converted from 500px to rem */
-    margin: auto;
-    border: 5px solid;
-  }
-  
-  button {
-    border-radius: 6.25rem; /* Converted from 100px to rem */
-    text-align: center;
-    font-size: 1.5625rem; /* Converted from 25px to rem */
-    width: 3.75rem; /* Converted from 60px to rem */
-    height: 3.75rem; /* Converted from 60px to rem */
-    margin: 0.3125rem; /* Converted from 5px to rem */
-  }
-  
-  .phone_display {
-    text-align: right;
-    font-size: 3.125rem; /* Converted from 50px to rem */
-    color: white;
-  }
-  
-  #add:hover {
-    background-color: red;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+.calculator_buttons {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+}
+
+.phone_cover {
+  background-color: black;
+  border-radius: 3.125rem; 
+  width: 18rem; 
+  height: 44rem; 
+  margin: auto;
+  margin-top: 5rem;
+  border: 5px solid;
+  position: relative;
+}
+
+.time_div {
+  top: 1.5rem;
+  left: 1.5rem;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
+
+.signal_img img {
+  top: 1rem;
+  width: 3.5rem;
+  height: 2rem;
+  position: absolute;
+  right: 1.5rem;
+}
+
+.floating_line {
+  border-radius: 0.2rem;
+  position: fixed;
+  height: 0.2rem;
+  width: 7rem;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 1rem;
+  right: 5.3rem;
+}
+
+button {
+  border-radius: 10rem; 
+  border: 1px solid black;
+  text-align: center;
+  font-size: 1.5625rem; 
+  width: 3.75rem; 
+  height: 3.75rem; 
+  margin: 0.2rem; 
+  transition: transform 0.3s ease;
+}
+
+#myNum0 {
+  width: 9rem;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+.phone_display {
+  text-align: right;
+  font-size: 3.125rem; 
+  color: white;
+}
+
+.first_row td:not(:nth-child(4)) button {
+  background-color: rgb(185, 185, 185);
+}
+
+.first_row td:nth-child(4) button {
+  background-color: orange;
+  color: white;
+}
+
+.second_row td:not(:nth-child(4)) button,
+.third_row td:not(:nth-child(4)) button,
+.fourth_row td:not(:nth-child(4)) button,
+.fifth_row td:nth-child(-n + 2) button {
+  background-color: grey;
+  color: white;
+}
+
+.second_row td:nth-child(4) button,
+.third_row td:nth-child(4) button,
+.fourth_row td:nth-child(4) button,
+.fifth_row td:nth-child(3) button {
+  background-color: orange;
+  color: white;
+}
+
+.first_row button:hover,
+.second_row button:hover,
+.third_row button:hover,
+.fourth_row button:hover,
+.fifth_row button:hover {
+    filter: brightness(0.85);
+    transform: scale(1.1);
+}
